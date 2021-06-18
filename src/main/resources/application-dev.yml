@@ -1,0 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: pest-identification-gateway
+
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: consumer
+          uri: lb://pest-identification-consumer
+          predicates:
+            - Path=/consumer/**
+          filters:
+            - StripPrefix=1
