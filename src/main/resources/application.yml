@@ -2,10 +2,3 @@ spring:
   profiles:
     active: dev
 
-  cloud:
-    gateway:
-      globalcors:
-        corsConfigurations:
-          '[/**]':
-            allowedOrigins: "*"
-            allowedHeaders: "Origin, X-Requested-With, Content-Type, Accept, token"
