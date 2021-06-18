@@ -19,6 +19,4 @@ spring:
         - id: consumer
           uri: lb://pest-identification-consumer
           predicates:
-            - Path=/consumer/**
-          filters:
-            - StripPrefix=1
+            - Path=/**
