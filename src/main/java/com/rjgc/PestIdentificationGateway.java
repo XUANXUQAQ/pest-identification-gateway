@@ -10,10 +10,10 @@ import org.springframework.web.cors.reactive.UrlBasedCorsConfigurationSource;
 
 @SpringBootApplication
 @EnableDiscoveryClient
-public class PestIdentificationGatewayApplication {
+public class PestIdentificationGateway {
 
     public static void main(String[] args) {
-        SpringApplication.run(PestIdentificationGatewayApplication.class, args);
+        SpringApplication.run(PestIdentificationGateway.class, args);
     }
 
     @Bean

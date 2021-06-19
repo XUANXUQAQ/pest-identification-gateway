@@ -6,12 +6,12 @@
         <groupId>com.rjgc</groupId>
         <artifactId>pest-identification-api</artifactId>
         <version>1.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath>../pest-identification-api/pom.xml</relativePath> <!-- lookup parent from repository -->
     </parent>
 
     <artifactId>pest-identification-gateway</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>Pest-Identification-Gateway</name>
+    <name>pest-identification-gateway</name>
     <description>Gateway</description>
 
     <properties>
@@ -60,7 +60,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <mainClass>com.rjgc.PestIdentificationGatewayApplication</mainClass>
+                    <mainClass>com.rjgc.PestIdentificationGateway</mainClass>
                 </configuration>
                 <executions>
                     <execution>
