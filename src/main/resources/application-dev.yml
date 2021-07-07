@@ -20,3 +20,6 @@ spring:
           uri: lb://pest-identification-consumer
           predicates:
             - Path=/**
+      httpclient:
+        connect-timeout: 3000
+        response-timeout: 10000
